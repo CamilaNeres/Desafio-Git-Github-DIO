@@ -1,0 +1,58 @@
+ANOTAÇÕES- CURSO GIT E GITHUB
+
+1. Alguns comandos para usar no terminal windows : 
+'cls': limpa a tela do terminal.
+'dir': lista os arquivos e diretórios no local atual.
+'del': exclui um arquivo. 
+'rmdir': remove um diretório vazio.
+
+2. Comandos no terminal do git: 
+
+'ls': Lista arquivos e diretórios ( usar a flag '-a' para mostrar arquivos ocultos).
+'mkdir': cria um novo diretório.
+'cd': Navega para um diretório.
+'cd ..': retorna ao diretório pai.
+'git init':  inicia um novo repositorio git vazio.
+'git add': Adiciona um arquivo ao índice (staging area) para ser commitado posteriormente.
+'git commit -m "mensagem"': Registra as mudanças feitas nos arquivos adicionados.
+'git remote add [nome] [url]': Adiciona um repositório remoto (exemplo: GitHub) ao Git local.
+'git remote -v': Mostra os repositórios remotos cadastrados.
+'git status': Mostra o status atual do repositório.
+'git branch': Lista as branches existentes.
+'git log': Exibe o histórico de commits.
+'git push --verbose origin master': Exibe detalhes sobre o push feito para a branch "master" do repositório remoto.
+'pwd': Mostra o caminho completo do diretório atual.
+
+
+3.Passo a passo de cadastro keys ssh: 
+
+3.1. Gerar a chave:
+
+No terminal, execute o comando: ssh-keygen -t ed25519 -C "seu-email@example.com" para criar uma chave SSH com o algoritmo de criptografia Ed25519.
+A chave será salva no diretório ~/.ssh/id_ed25519 por padrão. Será solicitada a inserção de uma senha.
+Após isso, na terminal iremos executar:
+'cat id_ed25519.pub': irá gerar a chave pública, pronta pra ser colada no cadrasto de chave do github.
+
+3.2. Configurar a chave ssh (comandos no git dentro do ~/.ssh):
+'eval $(ssh-agent -s)': Inicia o agente ssh.
+'ssh-add id_ed25519': Add a chave privada ao agente ssh. 
+
+4. Como resolver conflitos do github:
+
+'git pull origin <nome-da-branch>': execute esse comando para obter a versão atualizada do repositório remoto. 
+
+Após resolver os conflitos manualmente no arquivo, execute os comandos:
+
+'git add *': Adiciona todos os arquivos modificados após a resolução dos conflitos.
+'git commit -m "Resolvendo conflitos"': Registra as mudanças e a resolução dos conflitos.
+'git push origin <nome-da-branch>': Envia as alterações para o repositório remoto (branch especificada).
+
+
+5. Clonagem de repositorio:
+
+Execute o comando 'git clone <link>' para clonar um repositório Git para sua máquina local.
+
+
+
+
+
