@@ -1,0 +1,92 @@
+Anotações Html5&CSS3
+
+*HTML 
+
+Estrutura básica do HTML:
+
+Todo documento HTML começa com a tag <html>. Dentro dela, temos duas seções principais: <head> e <body>.
+A seção <head> contém metadados, como o título da página exibido na barra de título do navegador, referências a arquivos CSS e JavaScript, entre outros elementos.
+A seção <body> é onde o conteúdo visível da página é colocado. Aqui você pode adicionar textos, imagens, links e outros elementos.
+
+Semântica:
+
+A semântica no HTML refere-se à utilização de elementos com significado adequado para descrever o conteúdo da página.
+Alguns exemplos de elementos semânticos são:
+<header>: Representa o cabeçalho do documento ou de uma seção.
+<nav>: Define a área de navegação do site.
+<article>: Indica um conteúdo independente e autocontido.
+<section>: Agrupa conteúdo relacionado em uma seção.
+<aside>: Representa conteúdo relacionado, mas não essencial.
+<footer>: Representa o rodapé do documento ou de uma seção.
+O uso correto desses elementos ajuda na acessibilidade para leitores de tela, no SEO (otimização para motores de busca) e na compreensão do conteúdo por outros desenvolvedores.
+
+Textos e links em HTML:
+
+Para criar parágrafos, você pode usar a tag <p>. Basta abrir a tag <p>, inserir o texto e fechá-la com </p>.
+Os cabeçalhos são representados pelas tags <h1> a <h6>. <h1> é usado para o cabeçalho principal, enquanto <h2> a <h6> são usados para títulos secundários com níveis de importância decrescentes.
+Para estilizar o texto, você pode usar tags como <strong> para tornar o texto em negrito, <em> para enfatizar o texto, <u> para sublinhar o texto, <s> para riscar o texto, entre outros.
+Para criar um link, utilize a tag <a> e o atributo href para especificar o URL de destino. Por exemplo: <a href="https://www.example.com">Texto do link</a>.
+
+Inserindo imagens em seu site:
+
+Para adicionar uma imagem, use a tag <img>. O atributo src especifica o caminho para a imagem, seja um URL remoto ou um caminho relativo ao arquivo HTML.
+Além do src, existem outros atributos opcionais, como alt, que fornece um texto alternativo para a imagem, útil para acessibilidade e caso a imagem não possa ser carregada. Você também pode definir a largura (width) e altura (height) da imagem.
+
+Organizando listas com HTML:
+
+Existem duas principais formas de criar listas: listas não ordenadas (<ul>) e listas ordenadas (<ol>).
+Dentro das listas, você pode usar a tag <li> para cada item da lista. 
+
+*CSS3
+
+Introdução ao CSS:
+
+O CSS (Cascading Style Sheets) é uma linguagem de estilo usada para estilizar e formatar documentos HTML.
+O CSS permite controlar a aparência dos elementos HTML, como cores, fontes, tamanhos, margens, entre outros.
+
+ID x Classe:
+IDs e Classes são utilizados para aplicar estilos a elementos específicos. IDs são únicos e representados pelo símbolo #, enquanto Classes podem ser usadas em vários elementos e são representadas pelo ponto.
+
+Estilizando textos:
+
+É possível aplicar estilos a elementos de texto usando seletores CSS.
+Alguns dos atributos mais comuns para estilizar texto incluem:
+color: Define a cor do texto.
+font-family: Especifica a família de fontes a ser usada.
+font-size: Define o tamanho da fonte.
+font-weight: Controla a espessura da fonte (por exemplo, negrito).
+text-decoration: Adiciona decorações ao texto (por exemplo, sublinhado).
+text-align: Alinha o texto (por exemplo, à esquerda, à direita, centralizado).
+tex-transform: é usada para alterar a capitalização ou estilo do texto em um elemento HTML.
+
+Estilizando elementos:
+
+O CSS pode ser usado para estilizar elementos HTML, como caixas, botões e links.
+Alguns atributos úteis para estilizar elementos incluem:
+background-color: Define a cor de fundo do elemento.
+border: Controla as bordas do elemento. ex: solid( mostra uma borda simples e reta); dotted( são bolinhas com um pequeno espaçamento entre elas); dashed(forma uma linha tracejada).
+padding: Define o espaçamento interno do elemento.
+margin: Define o espaçamento externo do elemento.
+width e height: Especificam a largura e altura do elemento.
+
+Estilizando listas:
+
+O CSS permite estilizar as listas, adicionando margens, preenchimentos, cores de fundo e personalizando os marcadores.
+Algumas das propriedades específicas para estilizar listas são:
+list-style-type: Define o estilo do marcador de lista (bullet ou número).
+list-style-image: Permite usar uma imagem personalizada como marcador de lista.
+list-style-position: Controla a posição do marcador em relação ao texto do item da lista.
+list-style-color: Define a cor do marcador de lista. 
+
+Dimensão e alinhamento: 
+
+Função: As propriedades de dimensões e alinhamentos do CSS3 permitem controlar o tamanho, posicionamento e alinhamento dos elementos HTML em uma página.
+
+Dimensões: As propriedades width e height especificam a largura e altura de um elemento, enquanto max-width e max-height definem o limite máximo para suas dimensões.
+
+Alinhamento horizontal: A propriedade text-align é usada para alinhar o texto horizontalmente dentro de um elemento.
+
+Alinhamento vertical: A propriedade vertical-align controla o alinhamento vertical de um elemento em relação ao seu contêiner.
+
+margin e padding: espaçamento externo e interno.  
+
