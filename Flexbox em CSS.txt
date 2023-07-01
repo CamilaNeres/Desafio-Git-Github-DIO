@@ -1,0 +1,73 @@
+Flexbox em CSS:
+É uma técnica poderosa para criar layouts flexíveis e responsivos. Vejamos os principais conceitos:
+
+Flex Container:
+É a tag que envolve os itens.
+Aplicamos a propriedade "display: flex" nela.
+Transforma seus itens filhos em flex items.
+
+Flex Item:
+São os elementos filhos diretos do Flex Container.
+Também podem se tornar Flex Container.
+
+Display: flex:
+Transforma a tag em um flex container.
+Automaticamente torna todos os filhos diretos em flex items.
+
+Flex direction:
+Estabelece o eixo principal do container.
+Define a direção dos flex items.
+Opções: row, row-reverse, column, column-reverse.
+
+Flex wrap:
+Define se os itens devem quebrar a linha ou não.
+Opções: nowrap, wrap, wrap-reverse.
+
+Flex flow:
+Atalho para flex-direction e flex-wrap.
+
+Justify content:
+Alinha e distribui os flex items ao longo do eixo principal.
+Controla o espaçamento e o alinhamento em relação ao container.
+Opções: flex-start, flex-end, center, space-between, space-around.
+
+Align-items:
+Alinha verticalmente os flex items dentro do container.
+Controla o alinhamento ao longo do eixo transversal.
+Opções: center, stretch, flex-start, flex-end, baseline.
+
+Align-content:
+Alinha as linhas de itens verticalmente dentro do container.
+Controla o alinhamento em relação ao eixo vertical.
+Opções: center, stretch, flex-start, flex-end, space-between, space-around.
+----
+
+Flex Grow:
+Propriedade CSS que define a capacidade de crescimento dos itens flexíveis.
+É uma propriedade aplicada aos flex items individualmente.
+Por padrão, os itens têm flex-grow definido como 0, não crescem além de seu tamanho original.
+
+Flex Shrink:
+Propriedade CSS que define a capacidade de encolhimento dos itens flexíveis.
+Quanto maior o valor de flex-shrink, mais o item irá encolher quando há falta de espaço.
+Por padrão, os itens têm flex-shrink definido como 1, encolhendo proporcionalmente.
+
+Flex Basis:
+Propriedade CSS do Flexbox que define o tamanho base/inicial de um item flexível antes do dimensionamento. Pixels ou porcentagem. 
+Aceita valores como comprimento ou palavras-chave como "auto" ou "content".
+O flex-basis é aplicado aos itens individualmente dentro do Flex Container.
+
+Flex:
+Propriedade CSS abreviada que combina flex-grow, flex-shrink e flex-basis em um único valor.
+Exemplo: flex: 1 0 auto; significa flex-grow: 1, flex-shrink: 0 e flex-basis: auto.
+Controla a flexibilidade dos itens em relação ao crescimento, encolhimento e tamanho base.
+
+Order:
+Propriedade CSS do Flexbox que define a ordem de exibição dos itens flexíveis.
+Permite alterar a ordem visual dos elementos independentemente da ordem no código HTML.
+Valores numéricos positivos ou negativos podem ser usados para especificar a ordem desejada dos itens.
+
+Align Self:
+Propriedade CSS que alinha individualmente um item flexível ao longo do eixo transversal.
+Sobrescreve o alinhamento definido no container flexível para o item específico.(align-itens)
+Valores possíveis incluem: "auto" (herda o alinhamento definido no container), "flex-start", "flex-end", "center", "baseline" e "stretch".
